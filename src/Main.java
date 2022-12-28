@@ -77,7 +77,7 @@ public class Main {
         if (a > 60 && 120 >= a) {
             System.out.println("в вагоне есть стоячее место»");
         } else {
-            System.out.println("вагон уже полностью забит»");
+            System.out.println("вагон уже полностью забит»"/);
         }
     }
 
