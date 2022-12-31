@@ -49,22 +49,23 @@ public class Main {
         if (a >= 18 && 24> a)
         {
             System.out.println("«Если возраст человека равен" + a + "  то ему нужно ходить в университетет»");}
-        if ( 24 <= a) {
-            System.out.println("«Если возраст человека равен" + a + "  то ему пора ходить на работу»");}
-        }
+        if ( 24 > a) {}
+        else  {
+        System.out.println("«Если возраст человека равен" + a + "  то ему пора ходить на работу»");}
+}
 
 
 
     public static void task5(){
-        int a = 24;
-        if (a > 5)
+        int a = 14;
+        if (a < 5)
         {
             System.out.println("«Если возраст ребенка равен" + a + "   лет, то он не может кататься на аттракционе»");}
         if (a >= 5 && 14> a)
         {
             System.out.println("«Если возраст ребенка равен" + a + "  лет, то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя»");}
-        if (a >= 14)
-        {
+        if ( 14 > a) {}
+        else  {
             System.out.println("«Если возраст человека равен" + a + "  лет, то он может кататься без сопровождения взрослого»");}
     }
 
@@ -77,14 +78,14 @@ public class Main {
         if (a > 60 && 120 >= a) {
             System.out.println("в вагоне есть стоячее место»");
         } else {
-            System.out.println("вагон уже полностью забит»"/);
+            System.out.println("вагон уже полностью забит»");
         }
     }
 
 
     public static void task7() {
         int one = 1;
-        int two = 4;
+        int two = 2;
         int three = 3;
         if (one > two && one > three) {
             System.out.println(one);
@@ -92,7 +93,9 @@ public class Main {
         if (one < two && two > three) {
             System.out.println(two);
         }
-        if (three > two && one < three) {
+        if ((one < two && two > three)&&(one > two && one > three)) {}
+        else
+        {
             System.out.println(three);
         }
     }
